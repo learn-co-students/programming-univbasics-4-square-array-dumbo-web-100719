@@ -1,20 +1,9 @@
-#def square_array(array)
-  #squared_array = []
-  #array.each { |i| squared_array << i ** 2 }
-  #squared_array
-#end
-
-#numbers = [1,2,3]
-#p square_array(numbers)
-
-
-def square_array(array)
+def square_array(numbers)
+  new_array = []
   counter = 0
-
-  while counter < array.length do
-    array[counter] ** 2
-    counter +=1
+  while counter < numbers.length()
+  new_array.push(numbers[counter] * numbers[counter])
+  counter += 1
   end
+  return new_array
 end
-
-square_array(numbers)
